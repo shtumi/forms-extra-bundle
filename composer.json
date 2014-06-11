@@ -1,10 +1,10 @@
 {
     "name":        "artprima/forms-extra-bundle",
     "type":        "symfony-bundle",
-    "description": "",
+    "description": "Symfony Forms Extra Bundle",
     "keywords":    ["symfony", "bundle"],
     "homepage":    "http://artprima.cz/",
-    "license":     "",
+    "license":     "MIT",
 
     "authors": [
     ],

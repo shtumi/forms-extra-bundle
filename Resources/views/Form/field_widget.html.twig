@@ -1,0 +1,8 @@
+{% block hidden_entity_widget %}
+    {% spaceless %}
+        {% if visible %}
+            {% set type = type|default('text') %}
+        {% endif %}
+        {{ block('form_widget_simple') }}
+    {% endspaceless %}
+{% endblock hidden_entity_widget %}

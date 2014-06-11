@@ -1,0 +1,9 @@
+parameters:
+    artprima.forms_extra.form.type.hidden_entity.class: Artprima\Bundle\FormsExtraBundle\Form\Type\HiddenEntityType
+
+services:
+    artprima.forms_extra.form.type.hidden_entity:
+        class: %artprima.forms_extra.form.type.hidden_entity.class%
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+           - { name: form.type, alias: hidden_entity }

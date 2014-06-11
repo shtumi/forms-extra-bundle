@@ -1,5 +1,5 @@
 {
-    "name":        "artprima/filestorage-bundle",
+    "name":        "artprima/forms-extra-bundle",
     "type":        "symfony-bundle",
     "description": "",
     "keywords":    ["symfony", "bundle"],

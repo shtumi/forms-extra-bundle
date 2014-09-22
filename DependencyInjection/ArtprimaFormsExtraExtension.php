@@ -23,8 +23,8 @@ class ArtprimaFormsExtraExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter('twig.form.resources', array_merge(
+            array($config['twig_form_widget']),
             $container->getParameter('twig.form.resources'),
-            array($config['twig_form_widget'])
         ));
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

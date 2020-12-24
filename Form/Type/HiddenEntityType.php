@@ -2,6 +2,7 @@
 
 namespace Artprima\Bundle\FormsExtraBundle\Form\Type;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\AbstractType;
 use Artprima\Bundle\FormsExtraBundle\Form\DataTransformer\EntityToIdTransformer;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
@@ -25,7 +26,7 @@ class HiddenEntityType extends AbstractType
     /**
      * @param ObjectManager $objectManager
      */
-    public function __construct(ObjectManager $objectManager)
+    public function __construct(EntityManagerInterface $objectManager)
     {
         $this->objectManager = $objectManager;
     }

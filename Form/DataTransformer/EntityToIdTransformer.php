@@ -3,6 +3,7 @@
 namespace Artprima\Bundle\FormsExtraBundle\Form\DataTransformer;
 
 use Artprima\Bundle\FormsExtraBundle\Form\Model\EntityView;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\TransformationFailedException;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -24,7 +25,7 @@ class EntityToIdTransformer implements DataTransformerInterface
      */
     protected $class;
 
-    public function __construct(ObjectManager $objectManager, $class)
+    public function __construct(EntityManagerInterface $objectManager, $class)
     {
         $this->objectManager = $objectManager;
         $this->class = $class;

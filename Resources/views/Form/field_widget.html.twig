@@ -1,8 +1,6 @@
-{% block hidden_entity_widget %}
-    {% apply spaceless %}
-        {% if visible %}
-            {% set type = type|default('text') %}
-        {% endif %}
-        {{ block('form_widget_simple') }}
-    {% endapply %}
-{% endblock hidden_entity_widget %}
+{%- block hidden_entity_widget -%}
+    {% if visible %}
+        {% set type = type|default('text') %}
+    {% endif %}
+    {{ block('form_widget_simple') }}
+{%- endblock hidden_entity_widget -%}
